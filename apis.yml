@@ -1,8 +1,30 @@
 aid: groundspeed
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/groundspeed.png
 name: Groundspeed
-description: Groundspeed is a company surfaced as a portfolio company of insight-partners and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Groundspeed is an insurance data and analytics company that pioneered
+  AI-powered extraction and standardization of unstructured commercial
+  property and casualty (P&C) insurance documents — loss runs, schedules of
+  values, ACORD forms, and broker submissions — turning them into structured,
+  analytics-ready data for underwriters, brokers, and carriers. Founded in Ann
+  Arbor, Michigan and backed by Insight Partners, Groundspeed was acquired by
+  Insurance Quantified, where its technology now powers the Intake,
+  Workflow, and Intelligence products of an AI-driven underwriting platform
+  serving commercial P&C carriers and MGAs. Groundspeed does not currently
+  publish a public developer program, API reference, or self-service
+  onboarding surface; this profile tracks its identity and public web
+  properties in the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/groundspeed/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +32,23 @@ x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: Insurance Quantified
+x-note: groundspeed.com now redirects to insurancequantified.com; no public API surface published
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Insurance
+- Insurtech
+- Underwriting
+- Analytics
+- Commercial Insurance
+- Property and Casualty
+- Document Processing
+- Data Extraction
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +56,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/groundspeed-domain-security.yml
 - type: Website
   url: https://groundspeed.com/
+- type: Website
+  name: Groundspeed at Insurance Quantified
+  url: https://insurancequantified.com/groundspeed/
+- type: Solutions
+  name: Insurance Quantified Solutions
+  url: https://insurancequantified.com/solutions/
+- type: Support
+  name: Talk to an Expert
+  url: https://insurancequantified.com/talk-to-an-expert/
+- type: PrivacyPolicy
+  url: https://insurancequantified.com/privacy-policy/
+- type: TermsOfService
+  name: Legal Disclosure
+  url: https://insurancequantified.com/legal-disclosure/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
