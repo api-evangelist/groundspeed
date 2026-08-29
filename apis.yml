@@ -37,6 +37,8 @@ description: >-
   onboarding surface; this profile tracks its identity and public web
   properties in the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/groundspeed/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
